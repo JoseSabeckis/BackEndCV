@@ -16,6 +16,7 @@ import com.floresjose.app.entity.persona;
 import com.floresjose.app.interfaces.IPersonaService;
 
 @RestController
+//CrossOrigin(origins="http://localhost:4200")sacar el parentesis para importar
 public class PersonaController {
 
 	@Autowired IPersonaService personaService;
@@ -53,6 +54,11 @@ public class PersonaController {
 		
 		return people;
 		
+	}
+	
+	@GetMapping("/personas/traer/perfil")
+	public persona buscarPersona() {
+		return personaService.buscarPersona((long)1);
 	}
 	
 }
