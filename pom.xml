@@ -112,6 +112,14 @@
 			<version>1.0.0.GA</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/aws.smithy.kotlin/http-jvm -->
+		<dependency>
+			<groupId>aws.smithy.kotlin</groupId>
+			<artifactId>http-jvm</artifactId>
+			<version>0.12.2</version>
+			<scope>runtime</scope>
+		</dependency>
+
 
 	</dependencies>
 
