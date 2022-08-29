@@ -3,6 +3,7 @@ package com.floresjose.app.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,12 +27,14 @@ public class PersonaController {
 		return personaService.getPersona();
 	}
 	
+	@PreAuthorize("hasRole('ADMIN')")
 	@PostMapping("/personas/crear")
 	public String crearPersonas(@RequestBody persona people) {
 		personaService.savePersona(people);
 		return "Se Guardaron Los Cambios";
 	}
 	
+	@PreAuthorize("hasRole('ADMIN')")
 	@DeleteMapping("/personas/borrar/{id}")
 	public String borrarPersona(@PathVariable Long id) {
 		personaService.borrarPersona(id);
