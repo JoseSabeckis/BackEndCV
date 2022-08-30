@@ -57,19 +57,7 @@
 			<version>0.9.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.switchyard/switchyard-validate -->
-		<dependency>
-			<groupId>org.switchyard</groupId>
-			<artifactId>switchyard-validate</artifactId>
-			<version>2.1.0.Final</version>
-		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
-		<dependency>
-			<groupId>com.auth0</groupId>
-			<artifactId>java-jwt</artifactId>
-			<version>4.0.0</version>
-		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
 		<dependency>
@@ -86,6 +74,11 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.switchyard</groupId>
+			<artifactId>switchyard-validate</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -105,24 +98,22 @@
 			<artifactId>jakarta.validation-api</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/javax.validation/com.springsource.javax.validation -->
 		<dependency>
-			<groupId>javax.validation</groupId>
-			<artifactId>com.springsource.javax.validation</artifactId>
-			<version>1.0.0.GA</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/aws.smithy.kotlin/http-jvm -->
 		<dependency>
 			<groupId>aws.smithy.kotlin</groupId>
 			<artifactId>http-jvm</artifactId>
 			<version>0.12.2</version>
 			<scope>runtime</scope>
 		</dependency>
-
+		<!-- https://mvnrepository.com/artifact/com.auth0/java-jwt -->
 		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 
 	</dependencies>
