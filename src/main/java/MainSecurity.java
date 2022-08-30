@@ -16,6 +16,7 @@ import com.floresjose.app.security.jwt.JwtEntryPoint;
 import com.floresjose.app.security.jwt.JwtTokenFilter;
 import com.floresjose.app.security.service.userdetailsimple;
 
+@SuppressWarnings("deprecation")
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
