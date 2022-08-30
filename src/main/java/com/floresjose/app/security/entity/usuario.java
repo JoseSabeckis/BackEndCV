@@ -1,7 +1,7 @@
 package com.floresjose.app.security.entity;
 
 import java.util.HashSet;
-import java.util.LinkedHashSet;
+
 import java.util.Set;
 
 import javax.persistence.Column;
